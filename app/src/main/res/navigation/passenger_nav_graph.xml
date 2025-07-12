@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/passenger_nav_graph"
+    app:startDestination="@id/navigation_passenger_home">
+
+    <fragment
+        android:id="@+id/navigation_passenger_home"
+        android:name="com.urooj.carpoolingapp.passenger.PassengerHomeFragment"
+        android:label="@string/nav_home" />
+
+    <fragment
+        android:id="@+id/navigation_passenger_search"
+        android:name="com.urooj.carpoolingapp.passenger.PassengerSearchFragment"
+        android:label="@string/nav_search" />
+
+    <fragment
+        android:id="@+id/navigation_passenger_location"
+        android:name="com.urooj.carpoolingapp.passenger.PassengerLocationFragment"
+        android:label="@string/nav_location" />
+
+    <fragment
+        android:id="@+id/navigation_passenger_profile"
+        android:name="com.urooj.carpoolingapp.passenger.PassengerProfileFragment"
+        android:label="@string/nav_profile" />
+</navigation>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProfilePageApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="false" />
+            
+        <activity
+            android:name=".auth.RegisterActivity"
+            android:exported="false" />
+            
+        <activity
+            android:name=".auth.RegisterTypeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".auth.PassengerRegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".auth.DriverRegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+            
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".passenger.PassengerDashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".driver.DriverDashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".passenger.DriverProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".passenger.RideConfigActivity"
+            android:exported="false" />
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY_HERE" />
+    </application>
+
+</manifest>
